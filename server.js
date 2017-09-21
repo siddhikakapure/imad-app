@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile('index.html', { root: __dirname });
+  res.send('Article one requested and will be servered here');
 });
 
 app.get('/article-two', function (req, res) {
@@ -18,7 +18,7 @@ app.get('/article-two', function (req, res) {
 });
 
 app.get('/article-three', function (req, res) {
-  res.sendFile('Article three requested and will be servered here');
+  res.send('Article three requested and will be servered here');
 });
 
 app.get('/ui/style.css', function (req, res) {
